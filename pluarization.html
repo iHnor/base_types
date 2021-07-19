@@ -6,11 +6,23 @@
 </head>
 <body>
     <script>
-        let number = 0;
+        let number = 21;
 
         function pluariz (number){
-            sdfa    
+            fNumb = number % 10
+            if (fNumb == 0 || ( 5 <= fNumb && fNumb <= 20 ))
+                return "карандашей"
+            else if( fNumb == 1 ){
+                return "карандаш"
+            }
+            else{
+                return "карандаша"
+            }
         }
+
+
+        rezult = pluariz(number)
+        console.log(number + " " + rezult)
     </script>
 </body>
 </html>
