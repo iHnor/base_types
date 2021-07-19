@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sum</title>
+</head>
+<body>
+    <h1>Sum</h1>
+    <script>
+        let firstNumb = 1, secondNumb = 5;
+
+        function searchSum (fNumb, sNumb){
+
+            rezSum = 0;    
+
+            if (fNumb > sNumb){
+                console.log("Error");
+            }
+            else{
+                for( let i = fNumb; i <= sNumb; i++){
+                    rezSum += i;
+                }
+                return rezSum;
+            }
+                   
+        }
+        
+        console.log(searchSum(firstNumb, secondNumb))
+
+    </script>
+</body>
+</html>
