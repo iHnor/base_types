@@ -9,15 +9,30 @@
         let number = 21;
 
         function pluariz (number){
-            fNumb = number % 10
-            if (fNumb == 0 || ( 5 <= fNumb && fNumb <= 20 ))
-                return "карандашей"
-            else if( fNumb == 1 ){
-                return "карандаш"
-            }
-            else{
-                return "карандаша"
-            }
+            sNumb = number % 10
+            dNumb = number % 100
+            
+            if ((10 <= dNumb  && dNumb <= 20) || (sNumb == 0) || (5 <= sNumb && sNumb <= 20))
+                return "олівців" 
+            else if ( sNumb == 1 )
+                return "олівець"
+            else 
+                return "олівця"   
+
+
+            // if (fNumb == 0 || (5 <= fNumb && fNumb <= 9)){
+            //     return 
+            // }
+
+            // if ()
+            // if (fNumb == 0 || ( 5 <= fNumb && fNumb <= 20 ))
+            //     return "олівців"
+            // else if( fNumb % 10 == 1 ){
+            //     return "олівець"
+            // }
+            // else{
+            //     return "олівця"
+            // }
         }
 
 
